@@ -1,0 +1,30 @@
+.contact-content {
+  height: 395px;
+  height: 100vh;
+  margin-top: 32px;
+  position: relative;
+  /*background-color: white;*/
+  /*background-image: url(../img/images.png);*/
+  /* line gives backgroundimage*/
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+}
+.contact-content::after {
+  content: "";
+  background-image: url(../img/images.png);
+  position: absolute;
+  width: 1045px;
+  height: inherit;
+  opacity: 0.5;
+  z-index: -1;
+  border: 0px;
+  /*border-radius: 20px;*/
+  border-bottom-right-radius: 120px;
+}
+.formbox input,
+textarea {
+  width: 52vw;
+  padding: 10px 6px;
+  margin: 7px 0px;
+}
